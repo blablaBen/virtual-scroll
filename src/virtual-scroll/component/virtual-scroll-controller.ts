@@ -2,20 +2,19 @@
 
 class VirtualScroll {
     $onInit:Function;
-    outerScrollElement:any;
+    scrollElement:any;
     constructor(private $element:angular.IRootElementService) {
       this.$onInit = this.inititalComponent;
     }
 
     inititalComponent() {
-        this.outerScrollElement = this.$element.find("main");
-        this.outerScrollElement.css("height", "200px");
-        this.outerScrollElement.css("overflow", "auto");
         this.initialRootElement();
     }
 
     initialRootElement() {
-
+      this.scrollElement = this.$element.find("scrollElement");
+      this.scrollElement.css("height", "200px");
+      this.scrollElement.css("overflow", "auto");
     }
 
     setType() {

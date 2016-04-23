@@ -4,12 +4,12 @@ var VirtualScroll = (function () {
         this.$onInit = this.inititalComponent;
     }
     VirtualScroll.prototype.inititalComponent = function () {
-        this.outerScrollElement = this.$element.find("main");
-        this.outerScrollElement.css("height", "200px");
-        this.outerScrollElement.css("overflow", "auto");
         this.initialRootElement();
     };
     VirtualScroll.prototype.initialRootElement = function () {
+        this.scrollElement = this.$element.find("scrollElement");
+        this.scrollElement.css("height", "200px");
+        this.scrollElement.css("overflow", "auto");
     };
     VirtualScroll.prototype.setType = function () {
         console.log("called");
