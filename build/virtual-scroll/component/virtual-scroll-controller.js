@@ -14,6 +14,9 @@ var VirtualScroll = (function () {
         this.scrollElement.css("display", "block");
     };
     VirtualScroll.prototype.initialInnerElement = function () {
+        this.innerScrollElement = this.$element.find("innerScrollElement");
+        this.innerScrollElement.css("height", "3000px");
+        this.innerScrollElement.css("display", "block");
     };
     VirtualScroll.prototype.setType = function () {
         console.log("called");

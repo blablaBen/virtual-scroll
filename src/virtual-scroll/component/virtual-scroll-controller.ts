@@ -21,8 +21,9 @@ class VirtualScroll {
     }
 
     initialInnerElement() {
-      //this.innerScrollElement =  this.$element.find("innerScrollElement");
-      //this.innerScrollElement.css("height", "1000px");
+      this.innerScrollElement =  this.$element.find("innerScrollElement");
+      this.innerScrollElement.css("height", "3000px");
+        this.innerScrollElement.css("display", "block");
     }
     setType() {
       console.log("called");
