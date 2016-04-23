@@ -1,0 +1,18 @@
+#compose-widget {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#content {
+  height: 145px;
+  overflow-y: auto;
+}
+
+.container {
+  border: 1px solid #BFBFBF;
+  padding: 20px;
+  border-radius: 5px;
+}
+.md-button.md-cornered {
+    border-radius: 5px;
+}

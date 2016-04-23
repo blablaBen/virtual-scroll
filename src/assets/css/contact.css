@@ -1,0 +1,20 @@
+.slide-up {
+    transition: .5s linear all;
+    height: 80px;
+    overflow: hidden;
+}
+.slide-up.ng-hide {
+    height:0;
+}
+.attribute-panel {
+    margin:auto;
+}
+.attribute-button.md-button.md-fab.md-mini {
+  line-height: 10px;
+  min-width: 0px;
+  min-height:0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:#FF6F00;
+}
